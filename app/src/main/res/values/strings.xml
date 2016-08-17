@@ -1,3 +1,8 @@
 <resources>
     <string name="app_name">Pizzaria</string>
+    <string name="mussarela">Mussarela</string>
+    <string name="calabresa">Calabresa</string>
+    <string name="portuguesa">Portuguesa</string>
+    <string name="borda">Borda Recheada</string>
+    <string name="calcular">Calcular</string>
 </resources>
