@@ -24,17 +24,36 @@ public class PedidoActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_pedido);
+
+        radioGroup = (RadioGroup) findViewById( R.id.radiosPizza );
+        checkBorda = (CheckBox) findViewById( R.id.borda );
+
+        radioGroup.setOnCheckedChangeListener( new RadioGroup.OnCheckedChangeListener() {
+
+            @Override
+            public void onCheckedChanged( RadioGroup group, int checkedId ) {
+
+                RadioButton radioPizza = ( RadioButton ) findViewById( checkedId );
+
+                if ( PizzaEnum.MUSSARELA.name().equalsIgnoreCase( radioPizza.getText().toString() ) ){
+                    checkBorda.setChecked( false );
+                    checkBorda.setEnabled( false );
+                } else {
+                    checkBorda.setEnabled( true );
+                }
+            }
+        });
     }
 
     public void calcular( View view ){
 
-        radioGroup = (RadioGroup) findViewById( R.id.radiosPizza );
+//        radioGroup = (RadioGroup) findViewById( R.id.radiosPizza );
 
         int checkedRadioButtonId = radioGroup.getCheckedRadioButtonId();
 
         selectedRadio = (RadioButton) findViewById( checkedRadioButtonId );
 
-        checkBorda = (CheckBox) findViewById( R.id.borda );
+//        checkBorda = (CheckBox) findViewById( R.id.borda );
 
         pizza = PizzaEnum.getEnum(selectedRadio.getText().toString());
 
