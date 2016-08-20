@@ -5,4 +5,5 @@
     <string name="portuguesa">Portuguesa</string>
     <string name="borda">Borda Recheada</string>
     <string name="calcular">Calcular</string>
+    <string name="valorPedido">Valor do pedido: </string>
 </resources>

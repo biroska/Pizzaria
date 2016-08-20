@@ -8,6 +8,7 @@
 
 
     <RadioGroup
+        android:id="@+id/radiosPizza"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content">
 
@@ -15,19 +16,19 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="@string/mussarela"
-            android:id="@+id/mussarela" />
+            android:id="@+id/radMussarela" />
 
         <RadioButton
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="@string/calabresa"
-            android:id="@+id/calabressa" />
+            android:id="@+id/radCalabressa" />
 
         <RadioButton
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="@string/portuguesa"
-            android:id="@+id/portuguesa" />
+            android:id="@+id/radPortuguesa" />
 
     </RadioGroup>
 
@@ -35,7 +36,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="@string/borda"
-        android:id="@+id/boprda" />
+        android:id="@+id/borda" />
 
     <Button
         android:layout_width="wrap_content"
@@ -43,6 +44,13 @@
         android:text="@string/calcular"
         android:id="@+id/calcular"
         android:onClick="calcular"
+        android:layout_gravity="center_horizontal" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:id="@+id/valorPedido"
         android:layout_gravity="center_horizontal" />
 
 
