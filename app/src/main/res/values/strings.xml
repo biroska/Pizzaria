@@ -6,4 +6,5 @@
     <string name="borda">Borda Recheada</string>
     <string name="calcular">Calcular</string>
     <string name="valorPedido">Valor do pedido: </string>
+    <string name="formaPagamento">Forma de pagamento: </string>
 </resources>
